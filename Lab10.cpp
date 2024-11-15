@@ -12,7 +12,7 @@ int main() {
     smatch matches;
 
     while (regex_search(text, matches, duplicate)) {
-        cout << "Duplicate found: " << matches[0] << endl;
+        cout << "Duplicates: " << matches[0] << endl;
         text = matches.suffix().str();
     }
     return 0;
